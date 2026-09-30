@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SkillHearth – agent skills for resumes, applications and debt planning</title>
+<meta name="description" content="Small, plain-text agent skills (SKILL.md folders). One free resume-bullet rewriter, two paid skills. Honest about what they do not do.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <div class="brand">SkillHearth</div>
+  <h1>Small agent skills that stay honest about your facts.</h1>
+  <p class="lead">An agent skill is a folder with a <code>SKILL.md</code> file and a few reference files. Drop it into your AI agent's skills location and it gives the agent a clear, repeatable procedure. Ours never invent experience, numbers or results for you.</p>
+  <p><a class="btn" href="#free">Get the free skill</a></p>
+</div></header>
+
+<main class="wrap">
+
+<section id="free">
+  <h2>Free: Resume Bullet Rewriter</h2>
+  <div class="card">
+    <span class="tag">Free &middot; MIT license</span>
+    <p>Paste your resume bullets. The skill rewrites each one to be clearer and more specific, shows before/after, flags vague, repeated or weak-verb bullets, and asks one short question wherever a fact is missing. Missing facts appear as <code>[ADD: ...]</code> instead of being made up.</p>
+    <p><a class="btn" href="downloads/resume-bullet-rewriter.zip" download>Download resume-bullet-rewriter.zip</a></p>
+    <p>Source: <a href="https://github.com/skillhearth/resume-bullet-rewriter">github.com/skillhearth/resume-bullet-rewriter</a></p>
+  </div>
+</section>
+
+<section id="paid">
+  <h2>Paid skills</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Job Application Tailor</h3>
+      <div class="price">US$12</div>
+      <p>Give it your resume and one job posting. It builds the application materials from what you have actually done, and nothing else.</p>
+      <ul>
+        <li>Screens the posting for common scam indicators first (for example, requests for money or bank/ID details) and reports them as things to verify, not as a verdict. The list of signals is <strong>not exhaustive</strong>.</li>
+        <li>Extracts requirements and keywords from the posting.</li>
+        <li>Builds a requirement-to-evidence fit table (Strong / Partial / Gap / Unknown) with honest gaps.</li>
+        <li>Suggests resume edits from your real experience only; drafts a cover letter and interview-answer skeletons.</li>
+      </ul>
+      <p><small>It will not write experience you do not have, does not promise replies, interviews or jobs, and is not legal, immigration or career advice. Personal-use license.</small></p>
+      <span class="btn" role="link" aria-disabled="true">Coming soon</span>
+    </div>
+    <div class="card">
+      <h3>Debt Payoff &amp; Budget Planner</h3>
+      <div class="price">US$9</div>
+      <div class="notice"><strong>Educational use only.</strong> Not financial, tax or legal advice. Simplified interest model: annual rate &divide; 12, no fees. Recommends no financial product or provider.</div>
+      <p>You enter income, expenses and debts; it computes your monthly leftover and compares the avalanche and snowball methods using only your numbers, with the arithmetic shown.</p>
+      <ul>
+        <li>Budget snapshot and debt table with first-month interest.</li>
+        <li>Flags any debt whose minimum does not cover its interest in the model.</li>
+        <li>Minimum-only baseline vs. avalanche vs. snowball: order, balances, months to zero, total interest.</li>
+        <li>If there is no leftover, it shows the shortfall instead of a misleading projection.</li>
+      </ul>
+      <p><small>Personal-use license, educational only. It does not promise any result.</small></p>
+      <span class="btn" role="link" aria-disabled="true">Coming soon</span>
+    </div>
+  </div>
+</section>
+
+<section id="inside">
+  <h2>What's inside</h2>
+  <ul>
+    <li><code>SKILL.md</code> &ndash; the procedure the agent follows (plain text).</li>
+    <li><code>references/</code> &ndash; short reference files and a fictional worked example.</li>
+    <li><code>README.md</code> and a license file.</li>
+  </ul>
+  <p>Text only: no code to run, no executables, no network access required.</p>
+</section>
+
+<section id="use">
+  <h2>How to use</h2>
+  <ol>
+    <li>Download and unzip. You get one folder containing <code>SKILL.md</code>.</li>
+    <li>Put that folder in your agent's skills folder (where your agent looks for skills).</li>
+    <li>Start a session and give the agent your input (for example, your resume bullets), as described in the skill's README.</li>
+  </ol>
+  <p>For the free skill, this command was observed working in our own test:</p>
+  <pre><code>npx skills add skillhearth/resume-bullet-rewriter</code></pre>
+  <p><small>Observed in our own test only; we do not know how it behaves in your setup.</small></p>
+</section>
+
+<section id="limits">
+  <h2>Honest limits</h2>
+  <ul>
+    <li><strong>Tested on:</strong> our own fictional test cases (3 per skill), not on any specific platform. The test agent was the same AI system that wrote the skills, so this is weak evidence. We make no compatibility claims beyond this: the skills follow the <code>SKILL.md</code> folder format.</li>
+    <li>No outcome promises. The resume skill does not promise interviews or jobs; the application skill does not promise replies.</li>
+    <li>The skills work only from what you give them. They do not verify your claims, and they do not state country-specific rules.</li>
+    <li>The scam-signal list in Job Application Tailor is not exhaustive. Always verify an employer yourself.</li>
+    <li>The debt planner is educational only, uses a simplified model (annual rate &divide; 12, no fees, fixed rates, constant income and expenses) and real loans can differ.</li>
+    <li>No reviews, user counts or ratings are shown because we have none to show.</li>
+  </ul>
+</section>
+
+<section id="license">
+  <h2>License</h2>
+  <ul>
+    <li><strong>Resume Bullet Rewriter:</strong> MIT &copy; SkillHearth. Free to use, modify and share under the MIT terms.</li>
+    <li><strong>Paid skills:</strong> personal-use license, no redistribution.</li>
+  </ul>
+</section>
+</main>
+
+<footer><div class="wrap">&copy; SkillHearth &middot; Static page, no scripts, no trackers, no cookies.</div></footer>
+</body>
+</html>
