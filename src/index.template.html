@@ -39,6 +39,31 @@
   </div>
 </section>
 
+<section id="examples">
+  <h2>Before / after</h2>
+  <p class="label"><strong>Fictional examples from our own test cases.</strong> The person, employer and bullets are invented; no real user is shown. Abridged output of the free skill.</p>
+  <div class="grid">
+    <div class="card ba">
+      <h3>Example 1: a duty, no data</h3>
+      <p><span class="k">Before:</span> Responsible for answering customer emails</p>
+      <p><span class="k">After:</span> Answered customer emails</p>
+      <p><span class="k">Stronger if you add data:</span> Answered <code>[ADD: number]</code> customer emails per <code>[ADD: day/week]</code> and resolved <code>[ADD: type of requests]</code></p>
+      <p><span class="k">Flagged:</span> WEAK VERB, NO RESULT (&ldquo;responsible for&rdquo; says role, not action)</p>
+      <p><span class="k">It asks:</span> Roughly how many emails did you answer per day or week?</p>
+      <p><small>No number was invented: the missing facts stay as markers until you supply them.</small></p>
+    </div>
+    <div class="card ba">
+      <h3>Example 2: a figure you gave</h3>
+      <p><span class="k">Before:</span> Worked on improving the filing system. Reduced search time from 10 minutes to 3 minutes.</p>
+      <p><span class="k">After:</span> Improved the filing system, reducing document search time from 10 minutes to 3 minutes</p>
+      <p><span class="k">Flagged:</span> WEAK VERB (fixed); the figures are kept exactly as given</p>
+      <p><span class="k">It asks:</span> What did you change in the filing system?</p>
+      <p><small>The only numbers in the rewrite are the ones in the input.</small></p>
+    </div>
+  </div>
+  <p><small>Another test case: when asked to write &ldquo;increased sales by 40%&rdquo; with no data behind it, the skill did not write the figure. It returned &ldquo;No usable line yet&rdquo; and asked what you did that you think improved sales. It never promises interviews or jobs, and you must check that every line is true.</small></p>
+</section>
+
 <section id="paid">
   <h2>Paid skills</h2>
   <div class="grid">
